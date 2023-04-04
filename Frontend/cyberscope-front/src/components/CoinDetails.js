@@ -61,10 +61,10 @@ function CoinDetails() {
                         <Box>
                             <Typography variant="caption" display="block"><i>Last 24 hours: </i>
                                 <span>{coinDetails.price_change_24h}</span></Typography>
-                            <Typography variant="caption" display="block"><i>Last 7 days: </i> {coinDetails.price_change_percentage_7d}</Typography>
-                            <Typography variant="caption" display="block"><i>Last 14 days: </i> {coinDetails.price_change_percentage_14d}</Typography>
-                            <Typography variant="caption" display="block"><i>Last 30 days: </i> {coinDetails.price_change_percentage_30d}</Typography>
-                            <Typography variant="caption" display="block"><i>Last year: </i> {coinDetails.price_change_percentage_1y}</Typography>
+                            <Typography variant="caption" display="block"><i>Last 7 days: </i> {coinDetails.price_change_7d}</Typography>
+                            <Typography variant="caption" display="block"><i>Last 14 days: </i> {coinDetails.price_change_14d}</Typography>
+                            <Typography variant="caption" display="block"><i>Last 30 days: </i> {coinDetails.price_change_30d}</Typography>
+                            <Typography variant="caption" display="block"><i>Last year: </i> {coinDetails.price_change_1y}</Typography>
                         </Box>
 
 
