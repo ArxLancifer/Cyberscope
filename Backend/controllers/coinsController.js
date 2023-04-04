@@ -47,6 +47,8 @@ const coinList = {
             name:data.name,
             description:data.description.en,
             current_price:data.market_data.current_price.usd,
+            high_price_24h:data.market_data.high_24h.usd,
+            low_price_24h:data.market_data.low_24h.usd,
             price_change_24h:data.market_data.price_change_24h_in_currency.usd,
             price_change_7d:data.market_data.price_change_percentage_7d_in_currency.usd,
             price_change_14d:data.market_data.price_change_percentage_14d_in_currency.usd,

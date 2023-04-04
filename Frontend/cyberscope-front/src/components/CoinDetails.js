@@ -51,11 +51,15 @@ function CoinDetails() {
                     </Grid>
                     <Grid item xs={8}>
                         <Typography align='center' variant="h6">{coinDetails.name} Details</Typography>
-                        <Typography variant="caption" display="block" >Current price: {coinDetails.current_price} $</Typography>
-                        <Divider />
                         <Typography variant="caption" display="block" >Name: {coinDetails.name}</Typography>
                         <Divider />
-                        <Typography variant="caption" display="block" >Description: {coinDetails.description}</Typography>
+                        <Typography variant="caption" display="block" >Current price: {coinDetails.current_price} $</Typography>
+                        <Divider />
+                        <Typography variant="caption" display="block" >Highest price in 24h: {coinDetails.high_price_24h} $</Typography>
+                        <Divider />
+                        <Typography variant="caption" display="block" >Lowest price in 24h: {coinDetails.low_price_24h} $</Typography>
+                        <Divider />
+                        <Typography variant="caption" display="block" >Description: {coinDetails.description || "No description"}</Typography>
                         <Divider />
                         <Typography variant="subtitle1" display="block" >Price history:</Typography>
                         <Box>
