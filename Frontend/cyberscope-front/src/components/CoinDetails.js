@@ -59,7 +59,7 @@ function CoinDetails() {
                         <Divider />
                         <Typography variant="caption" display="block" >Lowest price in 24h: {coinDetails.low_price_24h} $</Typography>
                         <Divider />
-                        <Typography variant="caption" display="block" >Description: {coinDetails.description || "No description"}</Typography>
+                        <Typography className='description-links' variant="caption" display="block" dangerouslySetInnerHTML={{__html:"Description:" + coinDetails.description}} ></Typography>
                         <Divider />
                         <Typography variant="subtitle1" display="block" >Price history:</Typography>
                         <Box>
@@ -70,8 +70,6 @@ function CoinDetails() {
                             <Typography variant="caption" display="block"><i>Last 30 days: </i> {coinDetails.price_change_30d}</Typography>
                             <Typography variant="caption" display="block"><i>Last year: </i> {coinDetails.price_change_1y}</Typography>
                         </Box>
-
-
                         <Divider />
                     </Grid>
                 </Grid>
