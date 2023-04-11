@@ -6,7 +6,7 @@ const coinMarkets = require('./routes/coinMarkets');
 const { urlencoded } = require('express');
 
 app.use(cors({
-    origin: ["https://memotrack-app.onrender.com","http://localhost:3000"],
+    origin: ["https://cryptocurrency-app-l01r.onrender.com","http://localhost:3000"],
 }));
 
 app.use(express.json());
