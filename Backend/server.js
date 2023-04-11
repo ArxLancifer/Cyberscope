@@ -7,6 +7,7 @@ const { urlencoded } = require('express');
 
 app.use(cors({
     origin: ["https://cryptocurrency-app-l01r.onrender.com","http://localhost:3000"],
+    methods: "GET,POST",
 }));
 
 app.use(express.json());

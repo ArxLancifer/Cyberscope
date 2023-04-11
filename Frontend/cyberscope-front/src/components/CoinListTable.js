@@ -18,7 +18,7 @@ function CoinListTable() {
         try {
 
         setIsloading(true);
-        const response = await axios.post('https://crypto-proxy-api.onrender.com/', {pagination:pagination});
+        const response = await axios.post('https://crypto-proxy-api.onrender.com/markets', {pagination:pagination});
         const data = response.data;
         setListData(data)
         setIsloading(false);
