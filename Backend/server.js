@@ -6,7 +6,7 @@ const coinMarkets = require('./routes/coinMarkets');
 const { urlencoded } = require('express');
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: ["https://crypto-proxy-api.onrender.com","http://localhost:3000"],
 }));
 
 app.use(express.json());
