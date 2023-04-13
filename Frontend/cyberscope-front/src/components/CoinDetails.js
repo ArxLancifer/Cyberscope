@@ -33,7 +33,7 @@ function CoinDetails() {
         borderColor: '#616161',
         borderRadius: 1,
         boxShadow: "2px 2px 2px 3px rgba(0, 0, 0, 0.15)",
-        width: "50%",
+        maxWidth: "768px",
         padding: "0.2rem",
         mx: "auto"
     }
