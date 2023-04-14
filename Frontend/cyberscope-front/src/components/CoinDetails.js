@@ -18,7 +18,7 @@ function CoinDetails() {
 
     async function handleGetCoinDetails() {
         try {
-            const response = await axios.get(`https://crypto-proxy-api.onrender.com/coins/${coinId}`);
+            const response = await axios.get(`https://crypto-api-proxy.onrender.com/coins/${coinId}`);
             const coinData = response.data;
             setCoinDetails(coinData)
         } catch (error) {
